@@ -13,6 +13,7 @@ $(document).ready(function () {
 
     $(".js-device").each(function () {
       $(this).on("mousedown", function (event) {
+        event.preventDefault();
         if (!event.target.classList.contains("js-draggable") && !event.target.classList.contains("js-btn-close")) {
           var deviceType = this.classList;
           $(this).children('div').each(function () {
