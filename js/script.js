@@ -56,7 +56,7 @@ $(document).ready(function () {
 
         var index = $(this).attr("data-device-index");
 
-        clearProperties(jsonDevices[index], this);
+        clearProperties(jsonDevices[index]);
       } else {
         populateProperties(this);
         populateDevices();
@@ -76,9 +76,8 @@ $(document).ready(function () {
       $(this).parent().css("top", 0);
       $(this).parent().css("left", 0);
 
-      clearProperties(jsonDevices[index], $(this).parent());
+      clearProperties(jsonDevices[index]);
       populateDevices();
-      activeDevice = undefined;
     });
   });
 
@@ -151,13 +150,15 @@ $(document).ready(function () {
     activeDevice = device;
   }
 
-  var clearProperties = function (deviceToClear, deviceElement) {
-    if (deviceElement == activeDevice) {
+  var clearProperties = function (deviceToClear) {
+    if (deviceToClear == activeDevice) {
       $(".js-property-name").val("");
       $(".js-property-serial").val("");
       $(".js-property-model").val("");
+      activeDevice = undefined;
+
+      deviceToClear.skip = false;
     }
-    deviceToClear.skip = false;
   }
 
 });
