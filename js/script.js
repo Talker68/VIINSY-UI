@@ -45,7 +45,7 @@ $(document).ready(function () {
     $(".js-draggable").on("mouseup", function (event) {
       if ($(this).css("top") == "0px" && $(this).css("left") == "0px") {
         this.classList.add("js-hidden");
-      } else {
+      } else if (!event.target.classList.contains("js-btn-close")) {
         populateProperties(this);
       }
     });
@@ -56,7 +56,7 @@ $(document).ready(function () {
 
         var index = $(this).attr("data-device-index");
 
-        clearProperties(jsonDevices[index]);
+        clearProperties(jsonDevices[index], this);
       } else {
         populateProperties(this);
         populateDevices();
@@ -76,7 +76,7 @@ $(document).ready(function () {
       $(this).parent().css("top", 0);
       $(this).parent().css("left", 0);
 
-      clearProperties(jsonDevices[index]);
+      clearProperties(jsonDevices[index], $(this).parent());
       populateDevices();
       activeDevice = undefined;
     });
@@ -151,11 +151,12 @@ $(document).ready(function () {
     activeDevice = device;
   }
 
-  var clearProperties = function (deviceToClear) {
-    $(".js-property-name").val("");
-    $(".js-property-serial").val("");
-    $(".js-property-model").val("");
-
+  var clearProperties = function (deviceToClear, deviceElement) {
+    if (deviceElement == activeDevice) {
+      $(".js-property-name").val("");
+      $(".js-property-serial").val("");
+      $(".js-property-model").val("");
+    }
     deviceToClear.skip = false;
   }
 
