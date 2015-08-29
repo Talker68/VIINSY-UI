@@ -155,10 +155,9 @@ $(document).ready(function () {
       $(".js-property-name").val("");
       $(".js-property-serial").val("");
       $(".js-property-model").val("");
-      activeDevice = undefined;
-
-      deviceToClear.skip = false;
+      activeDevice = undefined;      
     }
+    deviceToClear.skip = false;
   }
 
 });
