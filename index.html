@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>VIINSY-UI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <table class="table">
+
+    <tr class="row">
+
+      <th class="col-1  col_name">
+        <a class="btn-tag" href="#">Tag</a>Properties
+        <a class="btn-save" href="#">Save</a>
+      </th>
+      <td class="col-2  js-drop-area" rowspan="2"></td>
+      <th class="col-3  col_name">
+        <a class="btn-menu" href="#">Menu</a> Devices
+      </th>
+
+    </tr>
+
+    <tr class="row">
+
+      <td class="col-1">
+        <ul class="properties-list">
+          <li class="property">
+            <span class="property_name">Name:</span>
+            <input class="js-property-name" type="text" name="name">
+          </li>
+          <li class="property">
+            <span class="property_name">Serial:</span>
+            <input class="js-property-serial" type="text" name="serial">
+          </li>
+          <li class="property">
+            <span class="property_name">Model:</span>
+            <input class="js-property-model" type="text" name="model">
+          </li>
+        </ul>
+      </td>
+
+      <td class="col-3">
+        <ul class="js-devices-list">
+          <li class="js-device  js-media_display"><span>Media Display </span><span class="js-counter"></span></li>
+          <li class="js-device  js-media_server"><span>Media Server </span><span class="js-counter"></span></li>
+          <li class="js-device  js-media_player"><span>Media Player </span><span class="js-counter"></span></li>
+        </ul>
+      </td>
+
+    </tr>
+
+  </table>
+  
+  
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

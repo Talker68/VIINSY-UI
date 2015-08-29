@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "type": "media_player",
+    "properties": {
+      "name": "Player Name 1",
+      "serial": "Player Serial 1",
+      "model": "Player Model 1"
+    }
+},
+
+  {
+    "id": 2,
+    "type": "media_player",
+    "properties": {
+      "name": "Player Name 2",
+      "serial": "Player Serial 2",
+      "model": "Player Model 2"
+    }
+},
+
+  {
+    "id": 3,
+    "type": "media_player",
+    "properties": {
+      "name": "Player Name 3",
+      "serial": "Player Serial 3",
+      "model": "Player Model 3"
+    }
+},
+
+  {
+    "id": 4,
+    "type": "media_player",
+    "properties": {
+      "name": "Player Name 4",
+      "serial": "Player Serial 4",
+      "model": "Player Model 4"
+    }
+  },
+
+  {
+    "id": 5,
+    "type": "media_player",
+    "properties": {
+      "name": "Player Name 5",
+      "serial": "Player Serial 5",
+      "model": "Player Model 5"
+    }
+},
+
+  {
+    "id": 1,
+    "type": "media_server",
+    "properties": {
+      "name": "Server Name 1",
+      "serial": "Server Serial 1",
+      "model": "Server Model 1"
+    }
+},
+
+  {
+    "id": 2,
+    "type": "media_server",
+    "properties": {
+      "name": "Server Name 2",
+      "serial": "Server Serial 2",
+      "model": "Server Model 2"
+    }
+},
+
+  {
+    "id": 3,
+    "type": "media_server",
+    "properties": {
+      "name": "Server Name 3",
+      "serial": "Server Serial 3",
+      "model": "Server Model 3"
+    }
+},
+
+  {
+    "id": 4,
+    "type": "media_server",
+    "properties": {
+      "name": "Server Name 4",
+      "serial": "Server Serial 4",
+      "model": "Server Model 4"
+    }
+},
+
+  {
+    "id": 5,
+    "type": "media_server",
+    "properties": {
+      "name": "Server Name 5",
+      "serial": "Server Serial 5",
+      "model": "Server Model 5"
+    }
+},
+
+
+  {
+    "id": 1,
+    "type": "media_display",
+    "properties": {
+      "name": "Display Name 1",
+      "serial": "Display Serial 1",
+      "model": "Display Model 1"
+    }
+},
+
+  {
+    "id": 2,
+    "type": "media_display",
+    "properties": {
+      "name": "Display Name 2",
+      "serial": "Display Serial 2",
+      "model": "Display Model 2"
+    }
+},
+
+  {
+    "id": 3,
+    "type": "media_display",
+    "properties": {
+      "name": "Display Name 3",
+      "serial": "Display Serial 3",
+      "model": "Display Model 3"
+    }
+},
+
+  {
+    "id": 4,
+    "type": "media_display",
+    "properties": {
+      "name": "Display Name 4",
+      "serial": "Display Serial 4",
+      "model": "Display Model 4"
+    }
+},
+
+  {
+    "id": 5,
+    "type": "media_display",
+    "properties": {
+      "name": "Display Name 5",
+      "serial": "Display Serial 5",
+      "model": "Display Model 5"
+    }
+}
+
+]

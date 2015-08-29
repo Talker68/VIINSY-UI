@@ -1,0 +1,189 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.table,
+tr,
+th,
+td {
+  border: 1px solid #aaa;
+  vertical-align: top;
+}
+
+.table {
+  position: relative;
+  font-size: 1.6rem;
+}
+
+th {
+  background: #ddd;
+  position: relative;
+}
+
+.col-1 {
+  width: 200px
+}
+
+.col-3 {
+  width: 200px;
+}
+
+.col-2 {
+  width: 400px;
+}
+
+.row:not(:first-child) {
+  height: 400px;
+}
+
+.js-devices-list {
+  padding: 0;
+  margin: 0;
+}
+
+.js-draggable,
+.js-device {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.js-device {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 5px 10px;
+  margin: 10px 0;
+  color: red;
+  border: 1px solid black;
+}
+
+.js-counter {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  color: black;
+  text-align: center;
+  line-height: 3rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.js-draggable {
+  width: 200px;
+  padding: 5px;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #ddd;
+  color: black;
+  line-height: 32px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.js-btn-close {
+  position: absolute;
+  top: -20px;
+  right: -5px;
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.js-hidden {
+  display: none;
+}
+
+.col_name {
+  padding: 1rem 0;
+}
+
+.properties-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.property {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.property_name {
+  display: inline-block;
+  padding: 5px 10px;
+  color: red;
+  border: 1px solid black;
+}
+
+.property input {
+  display: inline-block;
+  width: 100px;
+  padding: 5px 23px 5px 3px;
+  color: red;
+  border: 1px solid black;
+  position: relative;
+}
+
+.property:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-write.png") no-repeat 0 0;
+  background-size: contain;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .5;
+  z-index: 1;
+}
+
+.btn-menu {
+  width: 20px;
+  height: 20px;
+  background: url("../img/btn-menu.png") no-repeat 0 0;
+  background-size: contain;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  position: absolute;
+  left: 30px;
+  opacity: .5;
+}
+
+.btn-tag {
+  width: 20px;
+  height: 20px;
+  background: url("../img/btn-tag.png") no-repeat 0 0;
+  background-size: contain;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  position: absolute;
+  left: 30px;
+  opacity: .5;
+}
+
+.btn-save {
+  width: 20px;
+  height: 20px;
+  background: url("../img/btn-save.png") no-repeat 0 0;
+  background-size: contain;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  position: absolute;
+  right: 30px;
+  opacity: .5;
+}
