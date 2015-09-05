@@ -15,7 +15,7 @@ $(document).ready(function () {
       $(this).on("mousedown", function (event) {
         event.preventDefault();
         if (!event.target.classList.contains("js-draggable") && !event.target.classList.contains("js-btn-close")) {
-          var deviceType = this.classList;
+       //   var deviceType = this.classList;
           $(this).children('div').each(function () {
             if (this.classList.contains("js-hidden")) {
               this.classList.remove("js-hidden");
@@ -80,6 +80,9 @@ $(document).ready(function () {
       populateDevices();
     });
   });
+  
+  
+  
 
   var createDraggableObjects = function () {
     for (i = 0; i < jsonDevices.length; i++) {
@@ -93,7 +96,7 @@ $(document).ready(function () {
     }
   };
 
-  var getDeviceCounters = function (doCountSkip) {
+  var getDeviceCounters = function () {
 
     var devices = $(jsonDevices);
     var counterPlayer = 0;
@@ -101,11 +104,11 @@ $(document).ready(function () {
     var counterDisplay = 0;
 
     devices.each(function () {
-      if (this.type == "media_player" && (doCountSkip || !this.skip)) {
+      if (this.type == "media_player" && !this.skip) {
         counterPlayer++;
-      } else if (this.type == "media_server" && (doCountSkip || !this.skip)) {
+      } else if (this.type == "media_server" && !this.skip) {
         counterServer++;
-      } else if (this.type == "media_display" && (doCountSkip || !this.skip)) {
+      } else if (this.type == "media_display" && !this.skip) {
         counterDisplay++;
       }
     });
@@ -146,6 +149,7 @@ $(document).ready(function () {
     $(".js-property-name").val(device.properties.name);
     $(".js-property-serial").val(device.properties.serial);
     $(".js-property-model").val(device.properties.model);
+    
     device.skip = true;
     activeDevice = device;
   }
